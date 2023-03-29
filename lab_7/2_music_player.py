@@ -6,7 +6,7 @@ pygame.init()
 window = pygame.display.set_mode((500, 500)) 
 pygame.display.set_caption("Music Player")
 
-music_folder = r'C:\Users\Ulpan\Documents\pp2\music_folder'
+music_folder = r'C:\Users\Ulpan\Documents\pp2\lab_7\music_folder'
 music_files = [os.path.join(music_folder, f) for f in os.listdir(music_folder) if f.endswith('.mp3')]
 
 i = 0
@@ -20,7 +20,7 @@ stop_button = pygame.draw.rect(window, (255, 0, 0), (330, 400, 50, 50)) #red rec
 next_button = pygame.draw.polygon(window, (80, 208, 255), ((480, 425), (430, 400),(430, 450)))  #blue triangle
 
 
-num_of_songs = len(os.listdir(r'C:\Users\Ulpan\Documents\pp2\music_folder'))
+num_of_songs = len(os.listdir(r'C:\Users\Ulpan\Documents\pp2\lab_7\music_folder'))
 
 while True: 
     for event in pygame.event.get(): 
